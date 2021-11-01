@@ -9,7 +9,7 @@ export const HomeScreen = () => {
       <Text>Home Screen</Text>
       <Button
         title={'Go to docs wallet'}
-        onPress={() => navigation.navigate('DocumentsWalletScreen')}
+        onPress={() => navigation.navigate('Wallet')}
       />
     </View>
   );

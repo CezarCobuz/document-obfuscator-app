@@ -1,10 +1,22 @@
 import React from 'react';
-import {Text, View} from 'react-native';
+import {SafeAreaView, StyleSheet, View} from 'react-native';
+import {DocumentPicker} from '../components/DocumentPicker/DocumentPicker';
 
+/**
+ * Mostly testing the image picker functionality (currently dev sandbox)
+ * TODO: Further extend this
+ */
 export const UploadScreen = () => {
   return (
-    <View style={{flex: 1, alignItems: 'center', justifyContent: 'center'}}>
-      <Text>Upload Screen</Text>
-    </View>
+    <SafeAreaView style={styles.container}>
+      <DocumentPicker />
+    </SafeAreaView>
   );
 };
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    backgroundColor: 'aliceblue',
+  },
+});
