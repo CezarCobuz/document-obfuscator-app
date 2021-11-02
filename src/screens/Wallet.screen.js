@@ -1,10 +1,12 @@
 import React from 'react';
 import {Text, View} from 'react-native';
+import CropPicker from '../components/CropPicker/CropPicker';
 
-export const DocumentsWalletScreen = () => {
+export const WalletScreen = () => {
   return (
     <View style={{flex: 1, alignItems: 'center', justifyContent: 'center'}}>
-      <Text>Wallet Screen</Text>
+      <Text>Temp v2 demo</Text>
+      <CropPicker />
     </View>
   );
 };

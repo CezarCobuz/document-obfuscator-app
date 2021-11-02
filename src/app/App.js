@@ -2,8 +2,9 @@ import {NavigationContainer} from '@react-navigation/native';
 // import {createNativeStackNavigator} from '@react-navigation/native-stack';
 import React from 'react';
 import {HomeScreen} from '../screens/Home.screen';
-import {DocumentsWalletScreen} from '../screens/DocumentsWallet.screen';
+import {WalletScreen} from '../screens/Wallet.screen';
 import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
+import {UploadScreen} from '../screens/Upload.screen';
 
 // const Stack = createNativeStackNavigator();
 const Tab = createBottomTabNavigator();
@@ -22,10 +23,8 @@ const App = () => {
       </Stack.Navigator> */}
       <Tab.Navigator>
         <Tab.Screen name="Home" component={HomeScreen} />
-        <Tab.Screen
-          name="DocumentsWalletScreen"
-          component={DocumentsWalletScreen}
-        />
+        <Tab.Screen name="Upload" component={UploadScreen} />
+        <Tab.Screen name="Wallet" component={WalletScreen} />
       </Tab.Navigator>
     </NavigationContainer>
   );
